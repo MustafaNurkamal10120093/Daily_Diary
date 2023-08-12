@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mustafa.diary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/diary"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/diary"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TugasUAS_10120093_Mustafa"
+        tools:targetApi="31">
+        <activity
+            android:name="com.mustafa.diary.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mustafa.diary.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mustafa.diary.ActivityHome"
+            android:exported="false"
+            android:label="Home Screen"
+            android:theme="@style/apptheme.NoActionBar" />
+        <activity
+            android:name="com.mustafa.diary.ui.daily.EditDiaryActivity"
+            android:exported="false"
+            android:theme="@style/apptheme.NoActionBar" />
+        <activity
+            android:name="com.mustafa.diary.ui.about.FragmentAbout"
+            android:exported="false"
+            android:theme="@style/apptheme.NoActionBar"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.mustafa.diary.ui.daily.CreateDiaryActivity"
+            android:exported="false"
+            android:theme="@style/apptheme.NoActionBar" />
+        <activity
+            android:name="com.mustafa.diary.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mustafa.diary.ActivityWelcomeDialog"
+            android:exported="false"
+            android:theme="@style/apptheme.NoActionBar" />
+        <activity
+            android:name="com.mustafa.diary.ActivitySplashScreen"
+            android:exported="true"
+            android:theme="@style/apptheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

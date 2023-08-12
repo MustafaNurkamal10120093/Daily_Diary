@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_mobile"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mustafa.diary.ui.home.FragmentHome"
+        android:label="Profile"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_daily"
+        android:name="com.mustafa.diary.ui.daily.FragmentDaily"
+        android:label="Notes"
+        tools:layout="@layout/fragment_daily" />
+
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.mustafa.diary.ui.about.FragmentAbout"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_add"
+        android:name="com.mustafa.diary.ui.daily.CreateDiaryActivity"
+        android:label="AddData"
+        tools:layout="@layout/fragment_add_diary"/>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.mustafa.diary.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+
+</navigation>
